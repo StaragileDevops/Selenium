@@ -12,19 +12,22 @@ public class App
 		
     public static void main( String[] args ) 
     {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Desktop\\ED\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/home/ubuntu");
+	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Desktop\\ED\\chromedriver.exe");
         
         ChromeOptions chromeOptions =new ChromeOptions();
         chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--disable-dev-shm-usage");
-        chromeOptions.setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
+        //chromeOptions.setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
         WebDriver driver = new ChromeDriver(chromeOptions);
         
         
         System.out.println("TestCase Execution Starts");
+	
+	//driver.get("http://127.0.0.1:8085/addressbook-demo/");
         
-        driver.get("http://127.0.0.1:8085/addressbook-demo/");
+        driver.get("http://103.4.13.203:8085/addressbook-demo");
         
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         
