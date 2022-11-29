@@ -18,8 +18,8 @@ public class App
     {
         //System.out.println( "Hello World!" );
 	
-		System.setProperty("webdriver.chrome.driver","/Users/shubham/Documents/Softwares/chrome-driver/chromedriver");
-		//System.setProperty("webdriver.chrome.driver","/home/ubuntu/chromedriver");
+		//System.setProperty("webdriver.chrome.driver","/Users/shubham/Documents/Softwares/chrome-driver/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/home/ubuntu/chromedriver");
 		
 		
 		
