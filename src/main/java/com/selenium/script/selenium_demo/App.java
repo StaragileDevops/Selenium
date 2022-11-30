@@ -29,16 +29,16 @@ public class App
 		
 		System.out.println("Welcome to the Selenium Scripts - It starts executing here");
 		//automation
-		driver.get("http://18.206.169.106:8081/addressbook/");
+		driver.get("http://18.177.136.146:8085/addressbook/");
 		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 		
 		driver.findElement(By.className("v-button")).click();
-		driver.findElement(By.id("gwt-uid-5")).sendKeys("Shubham");
-		driver.findElement(By.id("gwt-uid-7")).sendKeys("Singh");
+		driver.findElement(By.id("gwt-uid-5")).sendKeys("Ruchin");
+		driver.findElement(By.id("gwt-uid-7")).sendKeys("Sharma");
 		driver.findElement(By.id("gwt-uid-9")).sendKeys("9999999999");
-		driver.findElement(By.id("gwt-uid-11")).sendKeys("Shubham@gmail.com");
+		driver.findElement(By.id("gwt-uid-11")).sendKeys("ruchin@gmail.com");
 		driver.findElement(By.id("gwt-uid-13")).sendKeys("24/06/2022");
 		Thread.sleep(2000);
 		//click on the save button
